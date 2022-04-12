@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+    workspace:
+        build: 
+          context: py_env
+          dockerfile: Dockerfile
+        tty: true
+        volumes:
+            - ../src:/home/src
